@@ -44,7 +44,7 @@ for i in range(len(li)):
     s = smtplib.SMTP('smtp.gmail.com', 587)
     s.starttls()
     s.login("", "")
-    message = "Message_you_need_to_send"
+    message = "This message sent to you because this service was restarted"
     s.sendmail("wheelsmanx@gmail.com", li[i], message)
     s.quit
 
